@@ -298,7 +298,6 @@ nav > ul li:last-child:hover a::after{
 }
 .form-section .submit{
     padding: 8px 0;
-    /* background-color: rgb(112, 56, 243); */
     background-color: rgb(87, 67, 133);
     border: none;
     border-radius: 2px;
@@ -306,6 +305,10 @@ nav > ul li:last-child:hover a::after{
     font-weight: 500;
     color: red;
     font-style: italic;
+    transition: 0.5s;
+}
+.form-section .submit:hover{
+    background-color: rgb(74, 238, 52);
 }
 
 .animation{
@@ -373,8 +376,6 @@ nav > ul li:last-child:hover a::after{
     width: 450px;
     height: 430px;
     border-radius: 5px;
-    /* border: 1px solid rgb(70, 50, 116); */
-    /* padding: 2px; */
     box-shadow: 1px 1px 10px #00FFF9;
 }
 
