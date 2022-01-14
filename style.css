@@ -22,7 +22,7 @@
 }
 .section-one{
     width: 100%;
-    background-color: whitesmoke;
+    background-color: rgb(245, 245, 245);
 }
 
 .section-one header nav .logo{
@@ -76,15 +76,15 @@ nav > ul li a::after{
 nav > ul li:hover a::after{
     width: 100%;
 }
-nav .font-awesome{
-    margin-left: -350px;    
+nav > ul li:last-child{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -5px;
 }
-nav .font-awesome a .fa{
-    color: rgb(70, 50, 116);
-    padding: 5px;
-    font-size: 18px;
-    margin-top: 5px;
+nav > ul li:last-child:hover a::after{
+    width: 0;
 }
+
 
 /* ==================>>> End Nav Part <<<================= */
 
@@ -126,11 +126,18 @@ nav .font-awesome a .fa{
     padding: 8px 0;
     border-radius: 30px;
     box-shadow: 5px 5px 8px gray;
+    transition: 0.5s;
+}
+.influencer-info a:hover{
+    background-color: rgb(74, 238, 52);
+    color: black;
+    box-shadow: 5px 5px 8px rgb(115, 117, 113);
 }
 .influencer-info a .fa{
     font-size: 13px;
     margin-left: 3px;
 }
+
 /* ======================>>> End Influencer section <<<===================== */
 
 
@@ -157,6 +164,7 @@ nav .font-awesome a .fa{
     margin: 50px 150px;
     padding: 20px;
     box-sizing: border-box;
+    padding-bottom: 50px;
 }
 .populer-section .h2{
     font-family: var(--Montserrat-font);
@@ -210,44 +218,94 @@ nav .font-awesome a .fa{
     margin-right: 5px;
     padding-bottom: 5px;
 }
+.populer-section a{
+    text-decoration: none;
+    float: right;
+    margin-top: 40px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.populer-section a:hover{
+    color: red;
+}
 
 
 /* ======================>>> End Populer Section <<<===================== */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.influencer-info .influ-pic{
-    background-color: gray;
+/* ======================>>> Start Form swection <<<===================== */
+.last-section{
+    background-color: rgb(245, 245, 245);
+    padding: 50px 0 100px 0;
 }
+.last-section h2{
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(70, 50, 116);
+}
+.last-section h2 span{
+    color: red;
+}
+.form-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 150px;
+    /* box-shadow: 1px 1px 10px #00FFF9; */
+}
+.form-section form{
+    background-color: rgb(226, 223, 223);
+    width: 450px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+    box-sizing: border-box;
+    font-style: italic;
+    box-shadow: 1px 1px 10px #00FFF9;
 
-.influencer-info .animation-bg{
-    background-color: green;
-    position: relative;
+}
+.form-section label{
+    color: rgb(243, 12, 12);
+    font-size: 18px;
+    font-weight: 600;
+}
+.form-section div{
+    margin-bottom: 5px;
+}
+.form-section .div{
+    display: flex;
+    justify-content: space-between;
+}
+.form-section .name{
+    padding: 5px 0 5px 5px;
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+.form-section .gmail{
+    padding: 10px 0 10px 5px;
+    width: 100%;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+.form-section textarea{
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+}
+.form-section .submit{
+    padding: 8px 0;
+    /* background-color: rgb(112, 56, 243); */
+    background-color: rgb(87, 67, 133);
+    border: none;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    color: red;
+    font-style: italic;
 }
 
 .animation{
@@ -282,7 +340,7 @@ nav .font-awesome a .fa{
     left: 0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to top, transparent, rgba(0, 255,249,0.4));
+    background: linear-gradient(to top, transparent, rgb(70, 50, 116));
     background-size: 100px 180px;
     background-repeat: no-repeat;
     border-top-left-radius: 100px;
@@ -310,7 +368,39 @@ nav .font-awesome a .fa{
                 0 0 90px #00fff9,
                 0 0 100px #00fff9;
 }
-.influencer-info .influ-pic{
-    background-color: gray;
-    margin-top: -50px;
-} */
+
+.form-section .image img{
+    width: 450px;
+    height: 430px;
+    border-radius: 5px;
+    /* border: 1px solid rgb(70, 50, 116); */
+    /* padding: 2px; */
+    box-shadow: 1px 1px 10px #00FFF9;
+}
+
+
+/* ======================>>> End Form swection <<<===================== */
+
+
+/* ======================>>> Start Footer <<<===================== */
+
+footer{
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+footer  .p{
+    padding: 6px;
+}
+footer .footer-icon i{
+    margin: 0 3px;
+    margin-top: 5px;
+}
+
+/* ======================>>> End Footer <<<===================== */
+
+
+
+
