@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Luxurious+Roman&family=Playfair+Display&family=Poppins:wght@500&family=Roboto:wght@400;500&display=swap');  /*===> Roboto <===*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Luxurious+Roman&family=Open+Sans:wght@400;500&family=Playfair+Display&family=Poppins:wght@500&family=Roboto:wght@400;500&display=swap');  /*=====> Open Sans <=====*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Luxurious+Roman&family=Montserrat:wght@400;500&family=Open+Sans:wght@400;500&family=Playfair+Display&family=Poppins:wght@500&family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*=======> Common code <======*/
+:root{
+    --roboto-font: 'Roboto', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+    --Montserrat-font: 'Montserrat';
+}
+
+.main{
+    width: 98%;
+    margin: 0 auto;
+    background-color: rgb(235, 247, 245);
+    box-sizing: border-box;
+}
+.section-one{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.section-one header nav .logo{
+    font-family: var(--Montserrat-font);
+    font-weight: 400;
+    color: rgb(70, 50, 116);
+}
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    align-items: center;
+    box-shadow: 3px 3px 20px rgb(173, 170, 170);
+    margin-top: 10px;
+    border: 1px solid rgb(233, 225, 225);
+    outline: 3px solid rgb(251, 244, 252);
+    outline-offset: -6px;
+}
+nav > ul{
+    display: flex;
+}
+nav > ul li{
+    list-style-type: none;
+    margin: 13px 10px;
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+nav > ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 19px;
+    font-family: var(--Montserrat-font);
+    position: relative;
+}
+nav > ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+nav > ul li:hover a::after{
+    width: 100%;
+}
+nav .font-awesome{
+    margin-left: -350px;    
+}
+nav .font-awesome a .fa{
+    color: rgb(70, 50, 116);
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* =============== End Nav Part ================= */
+
+
+.influencer-info{
+    display: flex;
+    margin: 70px 0;
+    padding: 0 150px;
+    padding-bottom: 50px;
+}
+.influencer-info .influ-info{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.influencer-info .influ-info .child-influ-info{
+    margin-top: -30px;
+}
+.influencer-info h2{
+    font-size: 50px;
+}
+.influencer-info h2::first-letter{
+    color: rgb(70, 50, 116);
+    font-size: 68px;
+}
+.influencer-info p{
+    font-size: 16px;
+    line-height: 20px;
+}
+.influencer-info a{
+    text-decoration: none;
+    display: block;
+    margin-top: 12px;
+    background-color: rgb(70, 50, 116);
+    color: white;
+    width: 160px;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    box-shadow: 5px 5px 8px gray;
+}
+.influencer-info a .fa{
+    font-size: 13px;
+    margin-left: 3px;
+}
+
+/* 
+.influencer-info .influ-pic{
+    background-color: gray;
+}
+
+.influencer-info .animation-bg{
+    background-color: green;
+    position: relative;
+}
+
+.animation{
+    position: absolute;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-reflect: below 1px linear-gradient(#0001, #0004);
+}
+.animation .loader{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #0b2323;
+    animation: animate 2s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.animation .loader::before{
+    contain: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to top, transparent, rgba(0, 255,249,0.4));
+    background-size: 100px 180px;
+    background-repeat: no-repeat;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.animation .loader::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: #00fff9;
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: 0 0 10px #00fff9,
+                0 0 20px #00fff9,
+                0 0 30px #00fff9,
+                0 0 40px #00fff9,
+                0 0 50px #00fff9,
+                0 0 60px #00fff9,
+                0 0 70px #00fff9,
+                0 0 80px #00fff9,
+                0 0 90px #00fff9,
+                0 0 100px #00fff9;
+}
+.influencer-info .influ-pic{
+    background-color: gray;
+    margin-top: -50px;
+} */
