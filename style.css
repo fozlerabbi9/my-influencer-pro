@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* overflow-x: hidden; */
 }
 
 /*=======> Common code <======*/
@@ -107,8 +108,6 @@ nav>ul li:last-child:hover a::after {
         text-align: center;
         padding: 8px 0;
     }
-
-
 }
 
 /* === Media Q === */
@@ -122,7 +121,6 @@ nav>ul li:last-child:hover a::after {
     display: flex;
     margin: 70px 0;
     padding: 0 150px;
-    /* padding-bottom: 50px; */
 }
 
 .influencer-info .influ-info {
@@ -177,7 +175,7 @@ nav>ul li:last-child:hover a::after {
 
 /* === Media Q === */
 
-@media (max-width:1200px) {
+@media (max-width:668px) {
     .influencer-info {
         display: flex;
         flex-direction: column;
@@ -193,10 +191,21 @@ nav>ul li:last-child:hover a::after {
         width: 100%;
         padding: 10px;
         height: 200px;
+        padding: 20px 0;
+    }
+    .influencer-info .child-influ-info{
+        text-align: center;
+        padding: 0 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .influencer-info .child-influ-info a{
+        margin-bottom: 8px;
     }
 
     .influencer-info h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .influencer-info .influ-pic {
@@ -205,12 +214,30 @@ nav>ul li:last-child:hover a::after {
     }
 
     .influencer-info .influ-pic img {
+        margin-top: 30px;
+        width: 350px;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .influencer-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .influencer-info .influ-pic {
         margin-top: -40px;
         width: 350px;
     }
 
 }
-
 /* === Media Q === */
 
 /* ======================>>> End Influencer section <<<===================== */
@@ -236,11 +263,21 @@ nav>ul li:last-child:hover a::after {
 
 @media (max-width:1200px) {
     .logo-section {
-        margin: 0 150px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        height: 700px;
-        justify-items: center;
+        width: 91%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* height: 80px; */
+    }
+    .logo-section img{
+        width: 100px;
+        margin-right: 5px;
+    }
+}
+@media (max-width:1200px) {
+    .logo-section {
+        height: 200px;
     }
 }
 
@@ -272,12 +309,10 @@ nav>ul li:last-child:hover a::after {
     border-radius: 30px;
     padding: 3px;
     box-shadow: 1px 1px 5px rgb(70, 50, 116);
+    margin: 8px 2px;
 }
 
 .albam {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -331,7 +366,7 @@ nav>ul li:last-child:hover a::after {
 
 /* === Media Q === */
 
-@media (max-width:1200px) {
+@media (max-width:668px) {
     .populer-section{
         width: 100%;
         margin: 50px 0;
@@ -343,13 +378,20 @@ nav>ul li:last-child:hover a::after {
         width: 100%;
     }
     .albam{
-        width: 100%;
         justify-content: center;
+        padding-bottom: 10px;
     }
     .populer-section a{
         margin-right: 70px;
     }
 }
+@media (max-width:1025px) {
+    .populer-section a{
+        margin-top: 0;
+        padding-top: 15px;
+    }
+}
+
 
 /* === Media Q === */
 /* ======================>>> End Populer Section <<<===================== */
@@ -518,10 +560,17 @@ nav>ul li:last-child:hover a::after {
 }
 
 @media (max-width:1200px) {
+    .last-section {
+        /* background-color: rgb(163, 28, 28); */
+        /* padding: 50px 0 100px 0; */
+        width: 100%;
+        padding: 0;
+        /* margin: right -100px; ; */
+    }
     .form-section {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        /* width: 95%; */
         justify-content: center;
         margin: 0;
         align-items: center;
