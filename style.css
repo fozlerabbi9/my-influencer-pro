@@ -205,8 +205,9 @@ nav>ul li:last-child:hover a::after {
 
     .influencer-info h2 {
         font-size: 25px;
+        line-height: 30px;
+        padding: 20px 0 10px 0;
     }
-
     .influencer-info .influ-pic {
         display: flex;
         justify-content: center;
