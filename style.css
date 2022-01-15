@@ -7,7 +7,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
 }
 
 /*=======> Common code <======*/
@@ -268,7 +267,6 @@ nav>ul li:last-child:hover a::after {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        /* height: 80px; */
     }
     .logo-section img{
         width: 100px;
@@ -561,16 +559,15 @@ nav>ul li:last-child:hover a::after {
 
 @media (max-width:1200px) {
     .last-section {
-        /* background-color: rgb(163, 28, 28); */
-        /* padding: 50px 0 100px 0; */
         width: 100%;
         padding: 0;
-        /* margin: right -100px; ; */
+    }
+    .last-section h2{
+        padding-top: 30px;
     }
     .form-section {
         display: flex;
         flex-direction: column;
-        /* width: 95%; */
         justify-content: center;
         margin: 0;
         align-items: center;
@@ -584,6 +581,11 @@ nav>ul li:last-child:hover a::after {
         left: 0;
         width: 0;
         height: 0;
+    }
+    .last-section .image{
+        margin-top: -50px;
+        box-shadow: 1px 1px 10px #00FFF9;
+        margin-bottom: 50px;
     }
 }
 
